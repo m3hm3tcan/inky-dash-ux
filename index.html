@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Inky Dash</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="out-box">
+        <div class="box-up">
+          <div class="text-box"><span class="inky-color">Inky</span>Dash</div>
+          <div class="lower-text">Inky Generation Software</div>
+        </div>
+        <div class="box-down">
+          <div>
+            <div class="radio-button-group">
+              <div class="radio-caption">Style</div>
+              <input
+                type="radio"
+                id="default"
+                name="style"
+                value="default"
+                checked
+                class="radio-check"
+              />
+              <label for="default">Default</label>
+
+              <input
+                type="radio"
+                id="manga"
+                name="style"
+                value="manga"
+                class="radio-check"
+              />
+              <label for="manga">Manga</label>
+
+              <input
+                type="radio"
+                id="horror"
+                name="style"
+                value="horror"
+                class="radio-check"
+              />
+              <label for="horror">Horror</label>
+
+              <input
+                type="radio"
+                id="retro"
+                name="style"
+                value="retro"
+                class="radio-check disabled-btn"
+                disabled
+              />
+              <label for="retro" class="disabled-btn">Retro</label>
+            </div>
+
+            <div class="check-box-group">
+              <div class="radio-caption">Extras</div>
+              <label class="check-container">
+                <input type="checkbox" checked="checked" id="tie" value="tie"><span class="left">Tie</span>
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="check-container">
+                <input type="checkbox" id="pet" value="pet"><span class="left">Pet</span>
+                <span class="checkmark"></span>
+              </label>
+              
+              <label class="check-container disabled-btn">
+                <input type="checkbox" id="sword" value="sword" disabled><span class="left">Sword</span>
+                <span class="checkmark"></span>
+              </label>
+
+          </div>
+
+          <div class="button-group">
+                <button class="inky-button" id="generate-inky">Generate Inky</button>
+                <button class="inky-button" id="unleash-inky">Unleash Inky</button>
+                <button class="inky-button disabled-btn" id="disable-inky" disabled>Disable Inky</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

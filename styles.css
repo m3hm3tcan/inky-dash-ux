@@ -1,0 +1,210 @@
+body {
+  background-color: white;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.out-box {
+  border: 1px solid black;
+  width: 500px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 1px 3px #919191;
+}
+
+.box-up {
+  color: black;
+  height: 150px;
+  margin-top: 40px;
+  border-bottom: 1px solid rgb(95, 95, 95);
+  text-align: center;
+  justify-content: center;
+}
+
+.text-box {
+  font-size: 70px;
+  font-family: "Impact";
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+
+.inky-color {
+  color: #f09;
+}
+
+.lower-text {
+  padding-top:10px;
+}
+
+.box-down {
+  height: 410px;
+  width: 100%;
+  display: block;
+  background-color: rgb(233, 233, 233);
+}
+
+.radio-button-group {
+  font-size: large;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.radio-caption {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.radio-check {
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.check-box-group {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.extras-checkbox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+label {
+  padding-left: 10px;
+}
+
+/* //referance doc:  */
+/* https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons
+*/
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+input[type="radio"] {
+  margin: -5px 0 0 10px;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+input[type="radio"]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #c0c0c0;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid gray;
+  margin-right: 5px;
+}
+
+input[type="radio"]:checked:after {
+  top: -2px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #f09;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #c0c0c0;
+}
+
+.check-container {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #d4d1d1;
+}
+
+.check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check-container input:checked ~ .checkmark {
+  background-color: #d4d1d1;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-container .checkmark:after {
+  left: 11px;
+  top: 0px;
+  width: 5px;
+  height: 20px;
+  border: solid #f09;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.left {
+  padding-left: 30px;
+}
+
+.button-group {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.inky-button {
+  height: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #919191;
+  border-radius: 2px;
+  color: #3d3c3c;
+}
+
+.inky-button:hover {
+  color: black;
+}
+
+.disabled-btn,
+.disabled-btn:hover {
+  border-color: #b8b8b8;
+  color: #a5a5a5;
+  cursor: default;
+}
